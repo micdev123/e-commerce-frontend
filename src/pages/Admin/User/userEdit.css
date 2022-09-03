@@ -1,0 +1,167 @@
+.UsersContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 45vw; */
+    /* margin: 3rem 0; */
+}
+
+
+.edit_form {
+    width: 40rem;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.big_, .small_ {
+    font-weight: 550;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small_ {
+    display: none;
+}
+
+.edit_form h2 .icon {
+    margin-right: 10px;
+}
+
+.edit_form input {
+    margin-bottom: 1.5rem;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border: none;
+    border-bottom: 1px solid #545353;
+    outline: none;
+}
+
+.isAdmin_ {
+    font-size: 1.1rem;
+}
+
+.isAdmin_ span {
+    margin-left: 10px;
+}
+
+.update {
+    background-color: #18273a;
+    padding: 7px 0;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0.5rem 0 0 0;
+    outline: none;
+}
+
+.update:hover {
+    background-color: #030e21;
+}
+
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .UsersContainer {
+        width: 100%;
+    }
+
+    .edit_form {
+        width: 100%;
+    }
+
+    .big_ {
+        font-size: 1.75rem;
+    }
+
+    .small_ {
+        display: none;
+    }
+
+    .edit_form input {
+        width: 100%;
+        font-size: 1.35rem;
+        border-bottom: 2px solid #545353;
+    }
+
+    .isAdmin_ {
+        display: flex;
+        align-items: center;
+        font-size: 1.35rem;
+        /* background-color: red; */
+    }
+
+    .isAdmin_ input {
+        width: 16px;
+        /* height: 0; */
+        background-color: yellow;
+    }
+
+    .isAdmin_ span {
+        margin-left: 10px;
+    }
+
+    .update {
+        padding: 8px 0;
+        font-size: 1.5rem;
+    }
+
+
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+
+    .UsersContainer {
+        width: 100%;
+    }
+
+    .edit_form {
+        width: 98%;
+    }
+
+    .big_ {
+        display: none;
+    }
+
+    .edit_form h2 {
+        display: block;
+        width: 100%;
+        font-size: 1.25rem;
+        text-align: center;
+        font-weight: 550;
+    }
+
+    ._display__mobile {
+        display: none;
+    }
+
+    .edit_form input {
+        font-size: 1.1rem;
+        border-bottom: 2px solid #545353;
+    }
+
+    .isAdmin_ {
+        font-size: 1.1rem;
+    }
+
+    .isAdmin_ span {
+        margin-left: 10px;
+    }
+
+    .update {
+        width: 100%;
+        padding: 8px 0;
+        font-size: 1.1rem;
+    }
+
+}

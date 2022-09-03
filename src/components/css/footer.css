@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #272E37;
+}
+.footer_container {
+    width: 85vw;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.footer .logo {
+    margin-bottom: 2rem;
+}
+
+.footer .logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer_contents .content h2 {
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
+
+.footer_contents .contact_info {
+    display: flex;
+    align-items: flex-end;
+    /* margin-top: 10px; */
+    font-weight: normal;
+}
+
+.footer_contents .content {
+    margin: 0;
+}
+
+
+.footer_contents .contact_info .icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.footer_contents p {
+    font-size: 1.2rem;
+}
+
+.footer_contents a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.content2 p {
+    margin-top: 8px;
+}
+
+.Footer_Mobile {
+    display: none;
+}
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .footer_contents {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .footer_contents .content h2 {
+        font-size: 1.7rem;
+    }
+
+    .footer_contents .content .icon {
+        font-size: 1.65rem;
+    }
+
+    .footer_contents .content p {
+        font-size: 1.45rem;
+    }
+    
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .footer_container {
+        width: 90vw;
+    }
+
+    .footer .logo {
+        margin-bottom: 0;
+    }
+
+    .footer_contents {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_contents .content h2 {
+        margin-top: 20px;
+        font-size: 1.25rem;
+    }
+
+    .footer_contents .content .icon {
+        font-size: 1.2rem;
+    }
+
+    .footer_contents .content p {
+        font-size: 1.05rem;
+    }
+
+    .Big_Screen_Footer {
+        display: none;
+    }
+
+    .Footer_Mobile {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1.5fr 0.8fr;
+    }
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (max-width : 968px) and (orientation: landscape) {
+    .footer_contents {
+        grid-template-columns: 2fr 1fr;
+    }
+}

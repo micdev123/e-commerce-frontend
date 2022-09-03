@@ -1,0 +1,439 @@
+.order_container {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.order_info {
+    background-color: white;
+    padding: 1rem 1rem 2rem 3.5rem;
+}
+
+.shipping_details .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.shipping_details .link {
+    text-decoration: none;
+}
+
+.shipping_details .link .icon {
+    font-size: 1.3rem;
+}
+
+.payment_ {
+    margin: 1.5rem 0;
+}
+
+.payment_ h2 {
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+    font-weight: 550;
+}
+
+.order_info h2 {
+    font-size: 1.4rem;
+    font-weight: 550;
+}
+
+.order_info span {
+    font-weight: 550;
+    margin-right: 10px;
+}
+
+.order_info p {
+    font-size: 1.05rem;
+}
+
+
+.yourOrder {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.yourOrder h2 {
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.order_content {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #fcfcfc;
+}
+
+.order_content:last-child {
+    border: none;
+    padding: 10px 0 0 0;
+}
+
+.order_content .item {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+.item_img {
+    width: 10rem;
+    height: 10rem;
+    /* margin-right: 20px; */
+    /* background-color: red; */
+}
+
+.item_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.item p {
+    font-size: 1.05rem;
+}
+
+.itemActions {
+    margin-left: 20px;
+}
+
+
+.itemActions .icon {
+    font-size: 1.3rem;
+    margin-right: 5px;
+}
+
+.itemActions .link {
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+
+.itemActions .delete_btn .icon {
+    color: #b10909;
+}
+
+
+
+.Order_action, .OrderAction {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    -webkit-box-shadow: -3px -2px 0px 0px rgba(245, 245, 245, 0.61);
+    -moz-box-shadow: -3px -2px 0px 0px rgba(245, 245, 245, 0.61);
+    box-shadow: -3px -2px 0px 0px #fdfdfdbd;
+    padding: 2rem 3.4rem 2rem 1rem;
+}
+
+.Order_action h2, .OrderAction h2 {
+    font-size: 1.3rem;
+    font-weight: 550;
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 10px;
+}
+
+.Order_action .info_, .Order_action .total, .OrderAction .info, .OrderAction .total {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 0;
+    border-bottom: 1px solid #f8f8f8;
+    padding-bottom: 10px;
+}
+
+.Order_action .info_ p, .OrderAction .info_ p {
+    font-size: 1.05rem;
+    font-weight: normal;
+}
+
+.Order_action .total p, .OrderAction .total p {
+    font-weight: 550;
+    font-size: 1rem;
+}
+
+.Order_action_btn {
+    width: 100%;
+    font-size: 1rem;
+    background-color: #18273a;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.Order_action_btn:hover {
+    background-color: #1d314a;
+}
+
+
+
+
+
+
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .order_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* gap: 5px; */
+        align-items: flex-start;
+    }
+
+    .order_info {
+        padding: 2rem 2rem 2rem 2.1rem;
+    }
+
+    .shipping_details .head {
+        border-bottom: 1.2px solid #f2f2f2;
+    }
+
+
+    .shipping_details .link .icon {
+        font-size: 1.5rem;
+    }
+
+    .order_info h2 {
+        font-size: 1.5rem;
+        font-weight: 550;
+    }
+
+    .payment_ h2 {
+        /* font-size: 1.8rem; */
+        border-bottom: 1.2px solid #f2f2f2;
+        padding-bottom: 10px;
+        font-weight: 550;
+    }
+
+    .order_info span {
+        margin-right: 10px;
+        font-size: 1.25rem;
+    }
+
+    .order_info p {
+        font-size: 1.2rem;
+    }
+
+
+    .yourOrder {
+        margin-top: 3rem;
+    }
+
+    .yourOrder h2 {
+        border-bottom: 2px solid #f2f2f2;
+        padding-bottom: 10px;
+    }
+
+    .order_content {
+        width: 100%;
+        /* background-color: red; */
+        border-bottom: 2px solid #fcfcfc;
+    }
+
+
+    .order_content .item {
+        /* background-color: yellow; */
+    }
+
+    .item p {
+        font-size: 1.3rem;
+    }
+
+
+    .itemActions .icon {
+        font-size: 1.5rem;
+    }
+
+    .Order_action {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        -webkit-box-shadow: -3px -2px 0px 0px rgba(245, 245, 245, 0.61);
+        -moz-box-shadow: -3px -2px 0px 0px rgba(245, 245, 245, 0.61);
+        box-shadow: -3px -2px 0px 0px #fdfdfdbd;
+        padding: 2rem 3rem 2rem 2.1rem;
+    }
+
+    .Order_action h2, 
+    .OrderAction h2 {
+        font-size: 1.5rem;
+    }
+
+    .Order_action .info_,
+    .Order_action .total {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+        padding: 0;
+        border-bottom: 1px solid #f8f8f8;
+        padding-bottom: 10px;
+    }
+
+    .Order_action .info_ p,
+    .OrderAction .info_ p {
+        font-size: 1.2rem;
+    }
+
+    .Order_action .total p,
+    .OrderAction .total p {
+        font-size: 1.2rem;
+    }
+
+    .Order_action_btn {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+
+}
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .order_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* gap: 5px; */
+        align-items: flex-start;
+    }
+
+    .order_info {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
+    .shipping_details .head {
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+
+    .shipping_details .link .icon {
+        font-size: 1.15rem;
+    }
+
+    .order_info h2, .Order_action h2, .payment_ h2 {
+        font-size: 1.2rem;
+        font-weight: 550;
+    }
+
+    
+
+    .order_info p {
+        font-size: 1.05rem;
+    }
+
+    .yourOrder h2, .Order_action h2 {
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 10px;
+    }
+
+    .order_content {
+        width: 100%;
+        /* background-color: red; */
+        border-bottom: 1px solid #faf9f9;
+        position: relative;
+    }
+
+
+    .order_content .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* background-color: yellow; */
+    }
+
+    .item_img {
+        width: 100%;
+        height: 15rem;
+        /* margin-right: 20px; */
+        /* background-color: red; */
+        
+    }
+
+    .item_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item p {
+        width: 100%;
+        font-size: 1.05rem;
+    }
+
+    .itemActions .icon {
+        font-size: 1.3rem;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+
+    .itemActions .link {
+        font-size: 0.9rem;
+        text-decoration: none;
+    }
+
+
+    .Order_action {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        -webkit-box-shadow: -3px -2px 0px 0px rgba(245, 245, 245, 0.61);
+        -moz-box-shadow: -3px -2px 0px 0px rgba(245, 245, 245, 0.61);
+        box-shadow: -3px -2px 0px 0px #fdfdfdbd;
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
+    .Order_action div {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .Order_action div p:last-child {
+        text-align: right;
+    }
+
+    .Order_action .info_,
+    .Order_action .total {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+        padding: 0;
+        border-bottom: 1px solid #f8f8f8;
+        padding-bottom: 10px;
+    }
+
+    .Order_action .info_ p {
+        font-size: 1.05rem;
+        font-weight: normal;
+    }
+
+    .Order_action .total p {
+        font-weight: 550;
+        font-size: 1.1rem;
+    }
+
+    .Order_action_btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 7px 0;
+    }
+
+
+    
+}

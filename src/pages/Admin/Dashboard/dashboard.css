@@ -1,0 +1,21 @@
+.homeWidgets {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 5px;
+    padding: 0 1rem 0 0.9rem;
+}
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .homeWidgets {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .homeWidgets {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}

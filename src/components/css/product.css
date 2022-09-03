@@ -1,0 +1,153 @@
+.product {
+    background-color: #ffffff;
+    box-shadow: 0 0 2px #e4e4e4;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease-in;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product .link {
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+.product:hover {
+    transform: scale(1.03);
+    height: 100%;
+    cursor: pointer;
+}
+
+._product-img {
+    width: 100%;
+    height: 14rem;
+}
+
+._product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content_ {
+    text-align: center;
+}
+
+.content_ h2 {
+    font-size: 1.1rem;
+    font-weight: 550;
+    /* margin: 10px 0; */
+    /* text-align: center; */
+    margin-top: 1rem;
+}
+
+
+.content_ .rating {
+    margin: 1rem 0 0 0;
+    font-size: 1.2rem;
+}
+
+.content_ .price {
+    font-size: 1.1rem;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+
+.product .buy, .product .outOfStock {
+    padding: 7px;
+    font-size: 0.9rem;
+    background-color: #18273a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    outline: none;
+}
+
+.product .buy:hover {
+    background-color: #0a2f52;
+}
+
+.product .outOfStock {
+    cursor: not-allowed;
+    background-color: #c8c8c8;
+    color: black;
+}
+
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    ._product-img {
+        /* background-color: red; */
+        width: 100%;
+        height: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+
+    .content_ h2 {
+        font-size: 1.45rem;
+    }
+
+    .content_ .rating {
+        font-size: 1.5rem;
+    }
+
+    .content_ .price {
+        font-size: 1.5rem;
+    }
+
+    .product .buy,
+    .product .outOfStock {
+        padding: 9px;
+        font-size: 1.3rem;
+    }
+
+}
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 768px) {
+    ._product-img {
+        /* background-color: red; */
+        width: 100%;
+        height: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+
+    .content_ h2 {
+        font-size: 1.25rem;
+    }
+
+    .content_ .rating {
+        font-size: 1.25rem;
+    }
+
+    .content_ .price {
+        font-size: 1.25rem;
+    }
+
+    .product .buy,
+    .product .outOfStock {
+        padding: 8px;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+}
+

@@ -1,13 +1,199 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: #fffffff6; */
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+/* .home {
+  background-color: #f3f3f3f6;
+} */
+
+.main {
+  position: relative;
+  width: 100%;
+  margin: -12rem 0 2rem 0;
+  z-index: 100%;
+  border: none;
+  outline: none;
+}
+
+.main_container {
+  width: 90vw;
+  margin: 0 auto;
+  /* background-color: red; */
+  overflow: hidden;
+  transition: all .3s ease;
+}
+
+.main_container_ {
+  width: 98vw;
+  margin: 5px auto;
+  background-color: #fefefe;
+}
+
+
+.admin_container {
+  background-color: white;
+  margin-top: 5px;
+}
+
+.admin_container .container_contents{
+  flex: 3.8;
+  /* min-height: 100%; */
+  padding: 1rem 2rem 1rem 0;
+}
+
+
+.CircularLoader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.ToggleBtn {
+  display: block;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  width: 2rem;
+  height: 2rem;
+  background-color: #460f5e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ToggleBtn .icon {
+  /* background-color: #033040; */
+  color: white;
+  font-size: 1rem;
+}
+
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .main {
+    position: relative;
+    width: 100%;
+    margin: -27rem 0 2rem 0;
+    z-index: 100%;
+    border: none;
+    outline: none;
+  }
+
+  .admin_container .container_contents {
+    flex: 4;
+    /* min-height: 100%; */
+    padding: 1rem 5px 1rem 0;
+  }
+
+  .ToggleBtn {
+    /* bottom: 7rem; */
+    /* right: 12px; */
+    z-index: 1000;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .ToggleBtn .icon {
+    /* background-color: #033040; */
+    color: white;
+    font-size: 1.5rem;
+  }
+
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+  .main {
+    margin: -10rem 0 2rem 0;
+  }
+
+  .main_container {
+    width: 90vw;
+  }
+
+  .main_container_ {
+    width: 98vw;
+    margin: 5px auto;
+    background-color: #fefefe;
+    /* min-height: 90vh; */
+  }
+
+  .admin_container .container_contents {
+    flex: 4;
+    /* min-height: 100vh; */
+    padding: 2rem 5px 1rem 0;
+    /* background-color: red; */
+    overflow: hidden;
+    min-height: 90vh;
+  }
+
+  .ToggleBtn {
+    /* bottom: 7rem; */
+    /* right: 20px; */
+    /* z-index: 1000; */
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+
+  .ToggleBtn .icon {
+    /* background-color: #033040; */
+    color: white;
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (max-width : 968px) and (orientation: landscape){
+  .main {
+    margin: -12rem 0 2rem 0;
+  }
+
+  .main_container {
+    width: 90vw;
+  }
+
+  .main_container_ {
+    width: 98vw;
+    margin: 5px auto;
+    background-color: #fefefe;
+    /* min-height: 90vh; */
+  }
+
+  .admin_container .container_contents {
+    flex: 4;
+    /* min-height: 100vh; */
+    padding: 2rem 5px 1rem 0;
+    /* background-color: red; */
+    overflow: hidden;
+    min-height: 90vh;
+  }
+
+  .ToggleBtn {
+    /* bottom: 7rem; */
+    /* right: 20px; */
+    /* z-index: 1000; */
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+
+  .ToggleBtn .icon {
+    /* background-color: #033040; */
+    color: white;
+    font-size: 1.2rem;
+  }
 }
