@@ -1,5 +1,6 @@
 {
   "name": "e-commerce-frontend",
+  "proxy": "https://mern--shop.herokuapp.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
