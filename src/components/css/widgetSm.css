@@ -115,7 +115,7 @@
 
     .widgetSmListItem {
         display: grid;
-        grid-template-columns: 2rem 2fr 2.5rem;
+        grid-template-columns: 2rem 2.2fr 2.4rem;
         align-items: center;
         gap: 10px;
         margin-bottom: 10px;

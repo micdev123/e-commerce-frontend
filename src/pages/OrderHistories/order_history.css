@@ -159,7 +159,7 @@
 
     .orderHead,
     .history .order_ {
-        grid-template-columns: 10.5rem 6.5rem 4rem;
+        grid-template-columns: 10rem 6rem 4rem;
         border-bottom: 1px solid #eeeeee;
         gap: 10px;
     }

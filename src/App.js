@@ -197,11 +197,11 @@ function App() {
                                                         <p className='nav_email'>{userInfo.email}</p>
                                                     </div>
                                                     <div className='_menu'>
-                                                        <Link to='/orderHistory' className='link'>
+                                                        <Link to='/orderHistory' className='link' onClick={(e) => setMenu(false)}>
                                                             <AiOutlineDropbox className='icon' />
                                                             Orders
                                                         </Link> 
-                                                        <Link to='/profile' className='link'>
+                                                        <Link to='/profile' className='link' onClick={(e) => setMenu(false)}>
                                                             <ImProfile className='icon' />
                                                             Profile
                                                         </Link>
@@ -219,15 +219,15 @@ function App() {
                                                         <p className='nav_email'>{userInfo.email}</p>
                                                     </div>
                                                     <div className='_menu'>
-                                                        <Link to='/profile' className='link'>
+                                                        <Link to='/profile' className='link' onClick={(e) => setMenu(false)}>
                                                             <ImProfile className='icon' />
                                                             Profile
                                                             </Link>
-                                                        <Link to='/orderHistory' className='link'>
+                                                        <Link to='/orderHistory' className='link' onClick={(e) => setMenu(false)}>
                                                             <AiOutlineDropbox className='icon'/>
                                                             Orders
                                                         </Link>
-                                                        <Link to='/admin/dashboard' className='link'>
+                                                        <Link to='/admin/dashboard' className='link' onClick={(e) => setMenu(false)}>
                                                             <MdSpaceDashboard className='icon' />
                                                             Dashboard
                                                         </Link>

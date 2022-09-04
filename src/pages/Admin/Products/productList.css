@@ -279,6 +279,10 @@
         text-align: left;
     }
 
+    .tr {
+        margin-bottom: 10px;
+    }
+
     .td {
         font-size: 1.1rem;
         font-weight: normal;
