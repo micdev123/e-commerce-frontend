@@ -48,7 +48,7 @@ const Register = () => {
       return;
     }
     try {
-      const { data } = await userRequest.post("auth/register", {
+      const { data } = await userRequest.post("/auth/sign-up", {
         username,
         email,
         password,

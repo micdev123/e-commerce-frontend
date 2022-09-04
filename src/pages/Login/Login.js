@@ -39,9 +39,9 @@ const Login = () => {
     const { userInfo } = state;
 
     const submitHandler = async (e) => {
-    e.preventDefault();
+        e.preventDefault();
         try {
-            const { data } = await userRequest.post("auth/login", {
+            const { data } = await userRequest.post("/auth/sign-in", {
                 email,
                 password,
             });
