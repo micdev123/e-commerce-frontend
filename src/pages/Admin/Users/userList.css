@@ -159,3 +159,56 @@
         cursor: pointer;
     }
 }
+
+/* Mobile Devices :: Media Queries */
+@media screen and (max-width : 968px) and (orientation: landscape) {
+    .Users_Container {
+        width: 100%;
+        padding: 10px 1rem 1rem 1rem;
+    }
+
+    .Users_Container h2 {
+        font-weight: 550;
+        font-size: 1.35rem;
+    }
+
+
+    .table {
+        display: none;
+    }
+
+    .tablet_view_ {
+        width: 100%;
+        display: block;
+    }
+
+    .tablet_view_ .head {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 15.6rem 11rem 10rem 5rem;
+        border-bottom: 1.1px solid #d4d4d4;
+        padding-bottom: 10px;
+    }
+
+    .tablet_view_ .head p {
+        font-size: 1.2rem;
+    }
+
+    .tbody .tb_content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 14rem 9rem 7rem 5rem;
+        gap: 1rem;
+    }
+
+    .tbody .tb_content p {
+        font-weight: normal;
+        font-size: 1.1rem;
+    }
+
+
+    .userAction .icon {
+        font-size: 1.15rem !important;
+        cursor: pointer;
+    }
+}

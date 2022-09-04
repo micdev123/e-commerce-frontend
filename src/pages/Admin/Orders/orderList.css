@@ -177,3 +177,53 @@
         cursor: pointer;
     }
 }
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (max-width : 968px) and (orientation: landscape) {
+    .OrdersContainer {
+        width: 100%;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .OrdersContainer h2 {
+        font-size: 1.4rem;
+    }
+
+    .Tablet_display {
+        display: none;
+    }
+
+    ._Table_ .head_ {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 15rem 9.5rem 12.5rem 4rem;
+        border-bottom: 1px solid #d4d4d4;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .tbody_ .tb_content_ {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 13rem 7.5rem 11rem 4rem;
+        gap: 1rem;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #f5f5f5;
+        padding-bottom: 10px;
+    }
+
+    .big {
+        display: none;
+    }
+
+    .small {
+        display: block;
+    }
+
+    .tbody_ .tb_content_ p {
+        font-weight: normal;
+        font-size: 1.1rem;
+    }
+}
