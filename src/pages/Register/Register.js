@@ -48,10 +48,10 @@ const Register = () => {
       return;
     }
     try {
-      const { data } = await userRequest.post('/auth/register', {
-          username,
-          email,
-          password,
+      const { data } = await userRequest.post("auth/register", {
+        username,
+        email,
+        password,
       });
       // when dispatching you need to set the type and the payload 
       ctxDispatch({ type: 'USER_SIGNIN', payload: data });
